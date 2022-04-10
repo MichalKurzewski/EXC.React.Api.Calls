@@ -45,7 +45,7 @@ function ApiGetter() {
     <>
       <button onClick={appendNewUser}>add new user</button>
       {userInfos.map((userInfo: UserInfo, idx: number) => (
-        <div key={idx}>
+        <div key={idx} >
           <div className="single-display-user">
             <p>{idx + 1}.  </p>
             <p>{getFullName(userInfo)} </p>
