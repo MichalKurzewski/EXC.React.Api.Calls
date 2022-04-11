@@ -24,10 +24,28 @@
 .App-link {
   color: #61dafb;
 }
-.single-display-user{
+.single-user{
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid whitesmoke;
   display: flex;
   vertical-align: middle;
-  margin: 10px;
-
+  box-shadow: 0.3px 0.3px 0.5px rgba(0,0,0,0.2);;
 }
+.single-user:hover{
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.2);;
+}
+.single-user p{
+  margin: 10px;
+}
+.single-user img{
+margin-left: auto;
+margin-right: 0;
+}
+.users-list{
+  max-width: 600px;
+  margin:auto;
+ 
+}
+
 

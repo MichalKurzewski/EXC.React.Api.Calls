@@ -44,15 +44,15 @@ function ApiGetter() {
   return (
     <>
       <button onClick={appendNewUser}>add new user</button>
-      {userInfos.map((userInfo: UserInfo, idx: number) => (
-        <div key={idx} >
-          <div className="single-display-user">
-            <p>{idx + 1}.  </p>
+      <div className="users-list">
+        {userInfos.map((userInfo: UserInfo, idx: number) => (
+          <div className="single-user" key={idx}>
+            <p>{idx + 1}.</p>
             <p>{getFullName(userInfo)} </p>
             <img src={getImage(userInfo)} alt="userimg"></img>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </>
   );
 }
